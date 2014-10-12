@@ -9,10 +9,10 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Flatline Security</title>
+    <title>{{ page.title }}</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-      
+
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,22 +35,22 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="/">Home</a>
-          <a class="blog-nav-item" href="#">New features</a>
-          <a class="blog-nav-item" href="#">Press</a>
-          <a class="blog-nav-item" href="#">New hires</a>
-          <a class="blog-nav-item" href="#">About</a>
+          {% for p in site.pages reversed %}
+          <a class="blog-nav-item {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+          {% endfor %}
         </nav>
       </div>
     </div>
 
-      
+
     <div class="container">
         <div class="blog-header">
+            {% if page.title == "Home" %}
             <h1 class="blog-title">FLATLINE SECURITY</h1>
-          
+            {% else %}
+            <h1 class="blog-title">{{ page.title | upcase }}</h1>
+            {% endif %}
+
 <!--        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>-->
         </div>
     </div>
-      
- 
