@@ -1,0 +1,20 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            flatline
+tagline:          ''
+description:      ''
+url:              http://flatlinesecurity.com
+baseurl:          /
+
+author:
+  name:           'curtis'
+  url:            https://flatlinesecurity.com
+
+paginate:         5
