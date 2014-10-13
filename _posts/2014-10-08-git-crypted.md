@@ -9,7 +9,7 @@ categories:
 
 ---
 
-It's pretty easy to accidentally commit password files into git (believe me I know, because I've done it). It's possible to [remove a bad commit](https://help.github.com/articles/remove-sensitive-data/), but once that information leaks out, it has to be considered compromised.
+It's pretty easy to accidentally commit passwords into git (believe me I know, because I've done it). It's possible to [remove a bad commit](https://help.github.com/articles/remove-sensitive-data/), but once that information leaks out, it has to be considered compromised.
 
 <!-- more -->
 
