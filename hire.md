@@ -32,7 +32,7 @@ I'm a big fan of OpenStack--I've deployed private clouds using OpenStack (includ
 
 ### Distributed systems and service discovery
 
-Distributed systems and service discovery are also interesting to me, and I am working to learn about new implementations such as CoreOS' etcd or Hashicorp's Consul, among others. Given my emphasis on infosec, a strong knowledge of these technologies is important so that I can participate in securing them.
+Distributed systems and service discovery are also interesting to me, and I am working to learn about new implementations such as CoreOS' etcd or Hashicorp's Consul, among others. Given my emphasis on infosec, a strong knowledge of these technologies is important so that I understand how to properly secure them.
 
 I am also interested in the CAP theorem, which could be [rephrased](https://twitter.com/randyshoup/status/516920465571725313):
 
