@@ -23,7 +23,9 @@ To avoid this situation typically sensitive files are either not stored in the r
 
 ### Configuration management tools
 
-I am a big fan of configuration management tools such as Ansible, Chef, and Pupppet. Because these tools allow the expression of infrastructure as code, their configuration and/or source files can be placed in version control, and this usually includes sensitive information like passwords (example: setting the mysql servers root password). Given that, each of these systems has their own way of encrypting sensitive files.
+I am a big fan of configuration management tools such as Ansible, Chef, and Pupppet. Because these tools allow the expression of infrastructure as code, their configuration and/or source files can be placed in version control, and this usually includes sensitive information like passwords (example: setting the mysql servers root password).
+
+Each of these systems has their own way of encrypting sensitive files.
 
 * Ansible has [vault](http://docs.ansible.com/playbooks_vault.html)
 * Chef has [encrypted data bags](https://docs.getchef.com/essentials_data_bags.html#encrypt-a-data-bag-item)
@@ -31,6 +33,8 @@ I am a big fan of configuration management tools such as Ansible, Chef, and Pupp
 * and there are likely more...
 
 Each of the above has its own workflow, but usually there is a shared key of some kind and it is used to decrypt the files at runtime. That shared key has to be readable by the process running the configuration management system.
+
+### git-crypt
 
 However, what I want to discuss in this blog post is [git-crypt](https://github.com/AGWA/git-crypt) which can work in any situation in which git is being used, so git-crypt could be considered, in some ways, an alternative to systems like Ansible Vault, though they are not exactly the same, and may not fit into your particular workflow or security requirements.
 
@@ -122,6 +126,6 @@ If I change or add passwords and such to the passwords file, commit it, and push
 
 ### Conclusion
 
-I like git-crypt because it's pretty simple to use. It's also nice to be able to store passwords and other sensitive information right in the repository. Using gpg with git-crypt would also make for a pretty good workflow.
+I like [git-crypt](https://github.com/AGWA/git-crypt) because it's pretty simple to use. It's also nice to be able to store passwords and other sensitive information right in the repository. Using gpg with git-crypt would also make for a pretty good workflow.
 
 There is a lot more to think about in terms of keeping secrets, but for the purposes of this blog post I just wanted to go over a quick introduction to git-crypt using a shared key file, which might be a good way to get your team introduced to encrypting files in git repository.

@@ -4,7 +4,7 @@ title: Hire Me
 permalink: /hire/
 ---
 
-My name is Curtis Collicutt and I am a systems adminstrator specializing in information security.  I have held certifications such as  [CISSP](https://www.isc2.org/cissp/Default.aspx) and [GCUX](http://www.giac.org/certification/certified-unix-security-administrator-gcux), and have been employed as a systems security administrator for large organizations. I enjoy working in the DevOps paradigm and have worked in teams implementing Agile and Scrum methodologies. I believe infosec is largely about saying "yes" instead of a flat "no."
+My name is Curtis Collicutt and I am a systems adminstrator specializing in information security.  I have held certifications such as  [CISSP](https://www.isc2.org/cissp/Default.aspx) and [GCUX](http://www.giac.org/certification/certified-unix-security-administrator-gcux), and have been employed as a systems security administrator for large organizations. I enjoy working in the DevOps paradigm and have worked in teams implementing Agile and Scrum methodologies.
 
 If you have an interesting infosec related position open and think I might be a good fit, please feel free to contact me.
 
@@ -16,15 +16,15 @@ If you have an interesting infosec related position open and think I might be a 
 
 ### Sabbatical
 
-I am on a six month long self-imposed sabbatical. In addition to studying for the _Certified Ethical Hacker_ certification exam, I am taking the time to learn in depth about the latest innovations in information security, OpenStack infrastructure, [Platform-as-a-service](http://serverascode.com/2014/06/16/build-your-own-paas-docker.html), [Docker](http://docker.com), and distributed systems such as [Apache Mesos](http://mesos.apache.org/).
+I am on a six month long self-imposed sabbatical. In addition to studying for the _Certified Ethical Hacker_ certification exam, I am taking the time to learn in depth about the latest innovations in information security, OpenStack infrastructure, [Platform-as-a-service](http://serverascode.com/2014/06/16/build-your-own-paas-docker.html), [Docker](http://docker.com), and distributed systems such as [Apache Mesos](http://mesos.apache.org/), among others.
 
-Using these technologies and writing posts for this blog is a big part of that learning process. I'm also working with publishers on a couple of technical book ideas.
+Using these technologies and writing posts for this blog is a big part of that learning process. I'm also working with publishers on a couple of technical book concepts.
 
 ### Open Source
 
 I love open source software, including operating systems such as Linux and OpenBSD. I've worked heavily with the Ubuntu and Redhat distributions of Linux. I have also deployed private OpenStack clouds and am an enthusiastic user of automation tools such as Ansible and Puppet.
 
-I have contributed to several open source software projects. I am particularliy enamored with the Go language right now and am working to improve my development skills, especially in that language.
+I have contributed to several open source software projects. I am particularly enamored with the Go language right now and am working to improve my development skills, especially in that language.
 
 ### OpenStack
 
@@ -38,7 +38,7 @@ I am also interested in the CAP theorem, which could be [rephrased](https://twit
 
 > Consistent or available **when** partitioned.
 
-While I am not an academic researcher, I do find distributed systems to be fascinating, and believe that systems like Apache Mesos and Mesosphere's Marathon (plus Docker) will allow the creation of some spectacular systems.
+While I am not an academic researcher, I do find distributed systems to be fascinating (see Aphyr's work "[Call Me Maybe](http://aphyr.com/tags/jepsen)"), and believe that systems like Apache Mesos and Mesosphere's Marathon (plus Docker) will allow the creation of some spectacular systems.
 
 ### Infosec Position
 
