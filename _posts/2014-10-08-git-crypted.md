@@ -126,6 +126,6 @@ If I change or add passwords and such to the passwords file, commit it, and push
 
 ### Conclusion
 
-I like [git-crypt](https://github.com/AGWA/git-crypt) because it's pretty simple to use. It's also nice to be able to store passwords and other sensitive information right in the repository. Using gpg with git-crypt would also make for a pretty good workflow.
+I like [git-crypt](https://github.com/AGWA/git-crypt) because it's pretty simple to use. I think information technology is battling with complexity right now, so simple is good. It's also nice to be able to store passwords and other sensitive information right in the repository with the rest of the code. Using gpg with git-crypt would also make for a pretty good workflow.
 
 There is a lot more to think about in terms of keeping secrets, but for the purposes of this blog post I just wanted to go over a quick introduction to git-crypt using a shared key file, which might be a good way to get your team introduced to encrypting files in git repository.
