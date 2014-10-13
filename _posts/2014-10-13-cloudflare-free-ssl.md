@@ -45,6 +45,7 @@ These are some of the thoughts, goals, and concerns I have about using Cloudflar
 1. For me, having SSL is better than not having SSL
 2. I'd like to support SSL, though understand I don't have any sensitive information...this is just a technical blog
 2. As I have had clients ask about Cloudflare, I'd like to get some experience with it
+2. Cloudflare may be able to serve my site faster 
 2. I am not a large organization, just one person, thus free blog hosting and free SSL is good for me (even though SSL certs are getting very affordable)
 2. Cloudflare takes over my DNS (though they do support [two-factor authentication](http://blog.cloudflare.com/2-factor-authentication-now-available/), which is why I recently moved to [NameCheap](https://www.namecheap.com/) for my domains)
 2. The free SSL cert is a shared one--in fact as of this moment there are two sites listed in the alternative names, flatlinesecurity.com and netty.io, I have a feeling more will be added

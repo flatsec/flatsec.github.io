@@ -14,7 +14,7 @@ relative_permalinks: true
 title:            flatline security
 tagline:          ''
 description:      ''
-url:              http://flatlinesecurity.com
+url:              https://flatlinesecurity.com
 baseurl:          /
 
 author:
