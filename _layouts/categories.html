@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+
+<div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+
+<hr>
+
+{% for category in site.categories %}
+<h3>{{ category | first }}</h3>
+<ul>
+{% for posts in category %}
+    {% for post in posts %}
+    {% if post.url %}
+    <li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+{% endfor %}
+</ul>
+</li>
+{% endfor %}
+
+
+          </div><!-- /.blog-post -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+        </div><!-- /.blog-main -->

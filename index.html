@@ -7,7 +7,7 @@ title: Home
     <div class="row">
         <div class="col-sm-8 blog-main">
 
-        {% for post in site.posts limit:10 %}
+        {% for post in paginator.posts %}
           <hr />
           <div class="blog-post">
               <h3><a href="{{ post.url }}">{{ post.title }}</a></h3><p>{{ post.date | date_to_string }}</p>
@@ -25,8 +25,16 @@ title: Home
          </div>
           {% endfor %}
           <ul class="pager">
-            <li><a href="#">Previous</a></li>
-            <li><a href="#">Next</a></li>
+            {% if paginator.previous_page %}
+              {% if paginator.previous_page == 1 %}
+              <li><a href="/">Previous</a></li>
+              {% else %}
+              <li><a href="/page{{ paginator.previous_page }}">Previous</a></li>
+              {% endif %}
+            {% endif %}
+            {% if paginator.next_page %}
+            <li><a href="/page{{ paginator.next_page }}">Next</a></li>
+            {% endif %}
           </ul>
 
         </div><!-- /.blog-main -->

@@ -9,7 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>{{ page.title }}</title>
+    {% if page.title == 'Home' %}
+    <title>Flatline Security</title>
+    {% else %}
+    <title>{{ site.title }} - {{ page.title }}</title>
+    {% endif %}
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
 
@@ -18,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/bootstrap/css/blog.css" rel="stylesheet">
+<link href="/bootstrap/css/syntax.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -36,7 +41,10 @@
       <div class="container">
         <nav class="blog-nav">
           {% for p in site.pages reversed %}
+            {% if p.url contains 'page' or p.url contains 'categories' %}
+            {% else %}
           <a class="blog-nav-item {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
+            {% endif %}
           {% endfor %}
         </nav>
       </div>
@@ -46,11 +54,9 @@
     <div class="container">
         <div class="blog-header">
             {% if page.title == "Home" %}
-            <h1 class="blog-title">FLATLINE SECURITY</h1>
+            <h1 class="blog-title">{{ site.title | upcase }}</h1>
             {% else %}
             <h1 class="blog-title">{{ page.title | upcase }}</h1>
             {% endif %}
-
-<!--        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>-->
         </div>
     </div>

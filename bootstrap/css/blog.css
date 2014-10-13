@@ -5,6 +5,11 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  background-color: #EDEDEA;
+}
+
+hr {
+  border-color: #FCD059;
 }
 
 h1, .h1,
@@ -27,8 +32,6 @@ h4, .h4 {
   padding-bottom: 10px;
 }
 
-
-
 /*
  * Override Bootstrap's default container.
  */
@@ -45,7 +48,7 @@ h4, .h4 {
  */
 
 .blog-masthead {
-  background-color: #428bca;
+  background-color: #585858;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -56,7 +59,7 @@ h4, .h4 {
   display: inline-block;
   padding: 10px;
   font-weight: 500;
-  color: #cdddeb;
+  color: #fff;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
@@ -114,6 +117,7 @@ h4, .h4 {
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
+  font-size: 18px;
   padding: 15px;
   margin: 0 -15px 15px;
 }
@@ -163,6 +167,12 @@ h4, .h4 {
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
+}
+
+blockquote {
+  border-left: 3px solid #ccc;
+  font-style: italic;
+
 }
 
 
