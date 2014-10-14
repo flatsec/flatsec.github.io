@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Varnish 4 on CentOS 6 with SELinux
+title:      Varnish 4.0 on CentOS 6 with SELinux
 date:       2014-10-15 12:31:19
 categories:
   - selinux
