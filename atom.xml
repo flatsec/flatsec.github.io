@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>flatline security rss feed</title>
+ <title>FLATLINE SECURITY RSS</title>
  <link href="http://flatlinesecurity.com/atom.xml" rel="self"/>
  <link href="http://flatlinesecurity.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>

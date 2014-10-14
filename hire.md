@@ -16,7 +16,7 @@ If you have an interesting infosec related position open and think I might be a 
 
 ### Sabbatical
 
-I am on a six month long self-imposed sabbatical. In addition to studying for the _Certified Ethical Hacker_ certification exam, I am taking the time to learn in depth about the latest innovations in information security, OpenStack infrastructure, [Platform-as-a-service](http://serverascode.com/2014/06/16/build-your-own-paas-docker.html), [Docker](http://docker.com), and distributed systems such as [Apache Mesos](http://mesos.apache.org/), among others.
+As someone who values the concept of [life-long learning](http://en.wikipedia.org/wiki/Lifelong_learning), I am currently on a six month long self-imposed sabbatical. In addition to studying for the _Certified Ethical Hacker_ certification exam, I am taking the time to learn in depth about the latest innovations in information security, OpenStack infrastructure, [Platform-as-a-service](http://serverascode.com/2014/06/16/build-your-own-paas-docker.html), [Docker](http://docker.com), and distributed systems such as [Apache Mesos](http://mesos.apache.org/), among others.
 
 Using these technologies and writing posts for this blog is a big part of that learning process. I'm also working with publishers on a couple of technical book concepts.
 
