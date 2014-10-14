@@ -4,22 +4,22 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>serverascode.com rss feed</title>
- <link href="http://serverascode.com/atom.xml" rel="self"/>
- <link href="http://serverascode.com/"/>
+ <title>flatline security rss feed</title>
+ <link href="http://flatlinesecurity.com/atom.xml" rel="self"/>
+ <link href="http://flatlinesecurity.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://serverascode.com/</id>
+ <id>http://flatlinesecurity.com.com/</id>
  <author>
-   <name>curtisgithub</name>
-   <email>curtis@serverascode.com</email>
+   <name>curtis</name>
+   <email>curtis@flatlinesecurity.com</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://serverascode.com/{{ post.url }}"/>
+   <link href="http://flatlinesecurity.com/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://serverascode.com{{ post.id }}</id>
+   <id>http://flatlinesecurity.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
