@@ -6,7 +6,7 @@ permalink: /hire/
 
 My name is Curtis Collicutt and I am a systems adminstrator specializing in information security.  I have held certifications such as  [CISSP](https://www.isc2.org/cissp/Default.aspx) and [GCUX](http://www.giac.org/certification/certified-unix-security-administrator-gcux), and have been employed as a systems security administrator for large organizations. I enjoy working in the DevOps paradigm and have worked in teams implementing Agile and Scrum methodologies.
 
-If you have an interesting infosec related position open and think I might be a good fit, please feel free to contact me.
+If you have an interesting infosec related position open and think I might be a good fit, please feel free to contact me. I'm available for a full-time position, contract, or consulting.
 
 * email: _curtis@flatlinesecurity.com_
 * github: [curtisgithub](http://github.com/curtisgithub)

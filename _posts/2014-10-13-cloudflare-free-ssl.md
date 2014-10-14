@@ -55,7 +55,8 @@ These are some of the thoughts, goals, and concerns I have about using Cloudflar
 2. Cloudflare still connects to github via plain text
 2. At this time, Cloudflare seems to be trying to do [the right thing](http://krebsonsecurity.com/2014/02/the-new-normal-200-400-gbps-ddos-attacks/) in terms of keeping sites online
 2. CloudFlare has "apps" that can provide various features, mostly related to security of some kind. As far as I can tell the only thing that was on in my account was Scrapeshield's feature to "obfuscates email address from bots" and nothing else.
-2. I don't want anything enabled that might stop people from viewing my site via Tor or VPNs or otherwise--this is something I need to do a bit more research on
+2. I don't want anything enabled that might stop people from viewing my site via Tor or VPNs or otherwise (this is something I need to do a bit more research on)
+2. I don't really need any of the extra "enterprise" security features Cloudflare providess
 2. Server Name Identification (SNI) is not universally supported, which means some browsers might fail when accessing my site via SSL (mostly old browsers on old operating systems)
 2. Google might give a ranking boost to SSL sites (however small that boost is)
 

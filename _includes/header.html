@@ -41,11 +41,12 @@
       <div class="container">
         <nav class="blog-nav">
           {% for p in site.pages reversed %}
-            {% if p.url contains 'page' or p.url contains 'categories' %}
+            {% if p.url contains 'page' or p.url contains 'categories' or p.url contains 'atom' %}
             {% else %}
           <a class="blog-nav-item {% if p.url == page.url %} active{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
             {% endif %}
           {% endfor %}
+        <a class="blog-nav-item " href="/atom.xml">RSS</a>
         </nav>
       </div>
     </div>
