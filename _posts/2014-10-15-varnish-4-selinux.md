@@ -17,9 +17,9 @@ There is probably nothing more common for a RedHat/CentOS admin to do than disab
 Below you can see we have a CentOS 6.5 server and SELinux is enforcing.
 
 ```bash
-[root@dev-cache1 sysconfig]# cat /etc/redhat-release
+[root@cache sysconfig]# cat /etc/redhat-release
 CentOS release 6.5 (Final)
-[root@dev-cache1 sysconfig]# sestatus
+[root@cache sysconfig]# sestatus
 SELinux status:                 enabled
 SELinuxfs mount:                /selinux
 Current mode:                   enforcing
@@ -31,9 +31,9 @@ Policy from config file:        targeted
 But varnish 4.0 can't be started.
 
 ```bash
-[root@dev-cache1 sysconfig]# service varnish start
+[root@cache sysconfig]# service varnish start
 Starting Varnish Cache:                                    [FAILED]
-[root@dev-cache1 sysconfig]# rpm -qa | grep varnish
+[root@cache sysconfig]# rpm -qa | grep varnish
 varnish-4.0.2-1.el6.x86_64
 varnish-libs-4.0.2-1.el6.x86_64
 ```
@@ -43,7 +43,7 @@ If I disable SELinux and reboot varnish will start.
 There are a few error logs in ```/var/log/audit/audit.log```, and I'll drop them in here just for google searches.
 
 ```bash
-[root@dev-cache1 audit]# grep AVC /var/log/audit/audit.log
+[root@cache audit]# grep AVC /var/log/audit/audit.log
 type=AVC msg=audit(1413316302.956:4): avc:  denied  { chown } for  pid=1050 comm="varnishd" capability=0  scontext=system_u:system_r:varnishd_t:s0 tcontext=system_u:system_r:varnishd_t:s0 tclass=capability
 type=AVC msg=audit(1413316303.785:5): avc:  denied  { fowner } for  pid=1050 comm="varnishd" capability=3  scontext=system_u:system_r:varnishd_t:s0 tcontext=system_u:system_r:varnishd_t:s0 tclass=capability
 type=AVC msg=audit(1413316303.785:5): avc:  denied  { fsetid } for  pid=1050 comm="varnishd" capability=4  scontext=system_u:system_r:varnishd_t:s0 tcontext=system_u:system_r:varnishd_t:s0 tclass=capability
@@ -61,13 +61,13 @@ I thought this might be a good time to learn about SELinux. There's a good docum
 First let's install some packages.
 
 ```bash
-[centos@dev-cache1 ~]$ sudo yum install -y policycoreutils-python setroubleshoot-server
+[centos@cache ~]$ sudo yum install -y policycoreutils-python setroubleshoot-server
 ```
 
 Now we can translate the audit log into something human readable.
 
 ```bash
-[root@dev-cache1 ~]# sealert -a /var/log/audit/audit.log > audit.txt
+[root@cache ~]# sealert -a /var/log/audit/audit.log > audit.txt
 ```
 
 There's a few alerts in there, but they basically look like this:
@@ -92,13 +92,13 @@ allow this access for now by executing:
 So I ran this:
 
 ```bash
-[root@dev-cache1 ~]# grep varnishd /var/log/audit/audit.log | audit2allow -M varnishpol
+[root@cache ~]# grep varnishd /var/log/audit/audit.log | audit2allow -M varnishpol
 ```
 
 Which created a couple of files, one data file and one configuration file. Let's look at the configuration file.
 
 ```bash
-[root@dev-cache1 ~]# cat varnishpol.te
+[root@cache ~]# cat varnishpol.te
 
 module varnishpol 1.0;
 
@@ -116,22 +116,22 @@ As can be seen above, varnishd_t is getting three new capabilities: fowner, chow
 Using the ```varnishpol.pp``` file I can load the varnish policy.
 
 ```bash
-[root@dev-cache1 ~]# semodule -i varnishpol.pp
+[root@cache ~]# semodule -i varnishpol.pp
 ```
 
 And now start varnish, this time _with_ SELinux enforcing.
 
 ```
-[root@dev-cache1 ~]# sestatus
+[root@cache ~]# sestatus
 SELinux status:                 enabled
 SELinuxfs mount:                /selinux
 Current mode:                   enforcing
 Mode from config file:          error (Success)
 Policy version:                 24
 Policy from config file:        targeted
-[root@dev-cache1 ~]# service varnish start
+[root@cache ~]# service varnish start
 Starting Varnish Cache:                                    [  OK  ]
-[root@dev-cache1 ~]# ps ax | grep varnish
+[root@cache ~]# ps ax | grep varnish
  2319 ?        SLs    0:00 /usr/sbin/varnishd -P /var/run/varnish.pid -a :80 -f /etc/varnish/default.vcl -T 127.0.0.1:6082 -t 120 -u varnish -g varnish -S /etc/varnish/secret -s malloc,70M
  2321 ?        Sl     0:00 /usr/sbin/varnishd -P /var/run/varnish.pid -a :80 -f /etc/varnish/default.vcl -T 127.0.0.1:6082 -t 120 -u varnish -g varnish -S /etc/varnish/secret -s malloc,70M
 ```
@@ -140,16 +140,16 @@ The module was installed in ```/etc/selinux/targeted/modules/active/modules
 ```.
 
 ```bash
-[root@dev-cache1 modules]# pwd
+[root@cache modules]# pwd
 /etc/selinux/targeted/modules/active/modules
-[root@dev-cache1 modules]# ls varnish*
+[root@cache modules]# ls varnish*
 varnishd.pp  varnishpol.pp
 ```
 
 It's alongside the existing ```varnishd.pp``` module, which is also found bzipped in:
 
 ```bash
-[root@dev-cache1 modules]# locate varnishd.pp
+[root@cache modules]# locate varnishd.pp
 /etc/selinux/targeted/modules/active/modules/varnishd.pp
 /usr/share/selinux/targeted/varnishd.pp.bz2
 ```
@@ -157,9 +157,9 @@ It's alongside the existing ```varnishd.pp``` module, which is also found bzippe
 So the bzipped file is from the RPM, but what is in ```/etc/selinux``` is more like a configuration file, which makes sense.
 
 ```bash
-[root@dev-cache1 modules]# rpm -qf /usr/share/selinux/targeted/varnishd.pp.bz2
+[root@cache modules]# rpm -qf /usr/share/selinux/targeted/varnishd.pp.bz2
 selinux-policy-targeted-3.7.19-231.el6_5.3.noarch
-[root@dev-cache1 modules]# rpm -qf varnishd.pp
+[root@cache modules]# rpm -qf varnishd.pp
 file /etc/selinux/targeted/modules/active/modules/varnishd.pp is not owned by any package
 ```
 
