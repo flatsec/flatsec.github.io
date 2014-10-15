@@ -14,6 +14,8 @@ As of this writing, Varnish 4.0 won't run on a CentOS 6.x server when SELinux is
 
 There is probably nothing more common for a RedHat/CentOS admin to do than disabling SELinux. But we can't **always** disable SELinux.
 
+###Varnish won't start
+
 Below you can see we have a CentOS 6.5 server and SELinux is enforcing.
 
 ```bash
@@ -173,5 +175,6 @@ In the end, by granting varnishd some additional capabilities via SELinux it is 
 1. Are the additional capabilities we gave varnishd correct? Is it too much?
 1. What's the proper way to add the selinux module? RPM it and install it in the ```/usr/share/selinux``` dir?
 1. Should I grab the pp file from Fedora 19 (or later) and use that?
+1. How does that policy know what binary is what? I don't see anything showing which varnishd it is supposed to be allowing.
 
 So, still lots of questions, but so far a working varnishd with SELinux still enabled.
