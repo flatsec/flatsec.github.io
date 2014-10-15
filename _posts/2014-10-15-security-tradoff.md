@@ -29,7 +29,7 @@ I want to make very clear that this doesn't mean we have to trade everything to 
 
 ### An example: two-step authentication
 
-There are many big examples I could use (such as riding a bike to work versus driving in a car) but I think what I'd like to talk about is two-factor authentication, or perhaps better phrased as "two-step verification."
+There are many big examples I could use (such as riding a bike to work versus driving in a car) but I think what I'd like to talk about is two-factor authentication, perhaps better phrased as "two-step verification."
 
 The article "[How I Lost My $50,000 Twitter Username](https://medium.com/@N/how-i-lost-my-50-000-twitter-username-24eb09e026dd)" is still one of the more fascinating articles I've read on real-life online security.
 
