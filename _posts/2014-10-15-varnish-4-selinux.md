@@ -10,9 +10,9 @@ categories:
 
 As of this writing, Varnish 4.0 won't run on a CentOS 6.x server when SELinux is enforcing.
 
-<!-- more -->
-
 There is probably nothing more common for a RedHat/CentOS admin to do than disabling SELinux. But we can't **always** disable SELinux.
+
+<!-- more -->
 
 ###Varnish won't start
 
@@ -58,7 +58,9 @@ There's a [bug ticket](https://bugzilla.redhat.com/show_bug.cgi?id=1083111) for 
 
 ### SELinux troubleshooting
 
-I thought this might be a good time to learn about SELinux. There's a good document [here](http://wiki.centos.org/HowTos/SELinux) that I'm following to create a policy that will allow varnish 4 to startup and work properly.
+I thought this might be a good time to learn about SELinux. For the last few years I've been working at a place that is almost exclusively an Ubuntu shop. Before that, nowhere actually used SELinux, they all just turned it off. So, I have never worked at an organization that left SELinux on. Time to change that!
+
+There's a good document [here](http://wiki.centos.org/HowTos/SELinux) that I'm following to create a policy that will allow varnish 4 to startup and work properly.
 
 First let's install some packages.
 
@@ -176,5 +178,6 @@ In the end, by granting varnishd some additional capabilities via SELinux it is 
 1. What's the proper way to add the selinux module? RPM it and install it in the ```/usr/share/selinux``` dir?
 1. Should I grab the pp file from Fedora 19 (or later) and use that?
 1. How does that policy know what binary is what? I don't see anything showing which varnishd it is supposed to be allowing.
+1. What's the difference between apparmor and SELinux? Why don't I hear of Ubuntu admins turning off apparmor as much as I do turning off SELinux?
 
 So, still lots of questions, but so far a working varnishd with SELinux still enabled.
