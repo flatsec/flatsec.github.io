@@ -19,7 +19,7 @@ Also--[Clojure Koans](https://github.com/functional-koans/clojure-koans) might b
 
 Most of the time I just refuse to install Java. However, if I want to checkout Clojure there's not much choice. So here we go.
 
-First I had to install [Java for OSX](http://support.apple.com/kb/dl1572). I'm just using the Java that Apple provides. Please note that I didn't do any research on the best Java SDK to use or anything, essentially just used the first link that came up which was Apple's package.
+I installed [Java for OSX](http://support.apple.com/kb/dl1572). I'm just using the Java that Apple provides. Please note that I didn't do any research on the best Java SDK to use or anything, essentially just used the first link that came up, which was Apple's package.
 
 ```bash
 curtis$ java -version
