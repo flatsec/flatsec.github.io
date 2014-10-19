@@ -8,7 +8,7 @@ categories:
 
 ---
 
-The recent [Heartbleed](http://en.wikipedia.org/wiki/Heartbleed) SSL security bug made its way through almost every media outlet in the world. It made internet infrastructuralists (is that a good word?) realize an important component of the web wasn't getting enough attention. Now, a few months later, SSL has had more "eyeballs" on it, and there have been additional security issues discovered. The updates and patches have been flowing steady.
+The recent [Heartbleed](http://en.wikipedia.org/wiki/Heartbleed) SSL security bug made its way through almost every media outlet in the world. It made internet infrastructuralists (is that a good word?) realize an important component of the web wasn't getting enough attention. Now, a few months later, SSL has had more "eyeballs" on it, and there have been additional security issues discovered. The updates and patches have been flowing steadily.
 
 At this point, many IT workers are well on their way to suffering some kind of "SSL fatigue." But this fatigue, perhaps even antipathy, has been growing in and around information security for quite some time, and includes more than just SSL bugs.
 

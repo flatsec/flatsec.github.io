@@ -1,24 +1,12 @@
 /* syntax.css */
 
-/* to make lines scroll instead of wrap */
-/* from http://stackoverflow.com/a/23393920 */
-
-.highlight pre code * {
-  white-space: nowrap;    // this sets all children inside to nowrap
+/* buried in the comments here: http://stackoverflow.com/questions/10374171/how-to-make-twitter-bootstraps-pre-blocks-scroll-horizontally */
+pre code {
+  word-wrap: normal;
+  white-space: pre;
 }
 
-.highlight pre {
-  overflow-x: auto;       // this sets the scrolling in x
-}
-
-.highlight pre code {
-  white-space: pre;       // forces <code> to respect <pre> formatting
-}
-
-/* github style pygments theme for jekyll */
-/* from https://github.com/aahan/pygments-github-style */
-
-.highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
+.highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px;}
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
