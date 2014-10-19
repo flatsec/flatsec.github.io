@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Git Crypted
-date:       2014-10-08 12:31:19
+date:       2014-10-12 12:31:19
 summary:    Use git-crypt to easily encrypt sensitive information in git repositories.
 categories:
   - encryption
