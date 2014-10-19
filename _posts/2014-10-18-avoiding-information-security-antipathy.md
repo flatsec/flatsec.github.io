@@ -8,7 +8,7 @@ categories:
 
 ---
 
-The recent [Heartbleed](http://en.wikipedia.org/wiki/Heartbleed) SSL security bug made its way through almost every media outlet in the world. It made internet infrastructuralists (is that a good word?) realize an important component of the web wasn't getting enough attention. Now, a few months later, SSL has had more "eyeballs" on it, and there have been additional security issues discovered. The updates and patches have been steady.
+The recent [Heartbleed](http://en.wikipedia.org/wiki/Heartbleed) SSL security bug made its way through almost every media outlet in the world. It made internet infrastructuralists (is that a good word?) realize an important component of the web wasn't getting enough attention. Now, a few months later, SSL has had more "eyeballs" on it, and there have been additional security issues discovered. The updates and patches have been flowing steady.
 
 At this point, many IT workers are well on their way to suffering some kind of "SSL fatigue." But this fatigue, perhaps even antipathy, has been growing in and around information security for quite some time, and includes more than just SSL bugs.
 
@@ -32,4 +32,4 @@ At this point in many work environments, even mentioning a security issue leads 
 
 In this post I just wanted to introduce my thoughts on IT's alarm fatigue and how antipathy towards information security, as I define it, is growing. I hope in future posts to talk more about potential solutions.
 
-If there is anything to be taken from this post it's that while information security professionals have a bad reputation for being pedantic, paranoid, saying "no," and just generally getting in the way of everyone's work (describing myself here) they are still people and deserve empathy, like all of us do. 
+If there is anything to be taken from this post it's that while information security professionals have a bad reputation for being pedantic, paranoid, saying "no," and just generally getting in the way of everyone's work (describing myself here) they are still people and deserve empathy, like all of us do.
