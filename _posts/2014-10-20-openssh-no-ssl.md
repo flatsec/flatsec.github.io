@@ -36,8 +36,9 @@ First we download all the source code. I'm downloading the src.tar.gz file to ge
 # wget ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/openbsd55_6.7.patch
 # wget http://ftp.openbsd.org/pub/OpenBSD/5.5/src.tar.gz
 # wget ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/openssh-6.7.tar.gz
-# tar xvsfz /openssh-6.7/ssh/ /usr/src/openssh-6.7.tar.gz  
 # tar zxvf src.tar.gz  
+# cd usr.bin
+# tar xvsfz /openssh-6.7/ssh/ /usr/src/openssh-6.7.tar.gz  
 # cd ssh
 ```
 
