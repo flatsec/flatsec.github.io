@@ -16,7 +16,7 @@ After having been away from the information security profession for a couple of 
 
 If you would have told me ten plus years ago when I was first getting into the industry that my future self would be studying for a certification called _Certified Ethical Hacker_ I probably woudln't have believed you.
 
-Back then I though that if you didn't already know what was in your infrastructure then you had enough problems already, meaning fix that ifrst and what's more that it didn't help to have an external scan done because it simply presented a list of systems and ports that were open and vulnerabilties based on the servers banner. These scans that were not smart and were easily fooled with a banner change. Of course an external scan is not the same as a pentest, but at the time I considered them the same.
+Back then I thought that if you didn't already know what was in your infrastructure then you had enough problems already, meaning fix that problem first. What's more, it didn't help to have an external scan done anyways, because it simply presented a list of systems and ports that were open and vulnerabilties based on the servers banner. These scans that were not smart and were easily fooled with a banner change. Of course an external scan is not the same as a pentest, but at the time I considered them the same.
 
 I also felt, as most professionals do, that with enough time all systems are defeatable--with enough time everything can be broken. So I wasn't sure what the point was.
 
