@@ -34,7 +34,7 @@ These events have made me curious as to the current state information security.
 
 Recently the Washington Post wrote an article titled ["The ethics of Hacking 101"](http://www.washingtonpost.com/postlive/the-ethics-of-hacking-101/2014/10/07/39529518-4014-11e4-b0ea-8141703bbf6f_story.html) which brought up some questions and thoughts.
 
-Interestingly one of the professors quoted in the article requires the students don't work in the private sector, though I'm not sure how he could guarantee that.
+Interestingly one of the professors quoted in the article requires the students not to work in the private sector when the course is over, though I'm not sure how he could guarantee that.
 
 >“In order for me to teach these real-world attack skills, these students have to be trusted,” he said. “They cannot go to work for the private sector.
 
