@@ -3,7 +3,8 @@ layout:     post
 title:      NIST Hypervisor Security Recommendations
 date:       2014-10-23 14:00:00
 categories:
-  - linkdrop
+  - hypervisor
+  - nist
 
 ---
 
