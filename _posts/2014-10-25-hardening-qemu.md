@@ -220,12 +220,6 @@ NUMA host support no
 I see ```bluez``` there, guessing that is something to do with bluetooth (apparently it is the official [bluetooth linux stack](http://www.bluez.org/)). Trying not to make a joke about QEMU having the "bluez." Why would we need bluetooth in QEMU? There is probably a good reason, but let's pick on it anyways and disable it.
 
 ```bash
-root# ./configure --target-list=x86_64-softmmu  --disable-bluez
-```
-
-There, now it's configured not to compile in bluez support.
-
-```bash
 root# ./configure --target-list=x86_64-softmmu  --disable-bluez | grep bluez
 bluez  support    no
 ```
