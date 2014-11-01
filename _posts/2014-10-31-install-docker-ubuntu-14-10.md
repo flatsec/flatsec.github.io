@@ -154,7 +154,7 @@ curtis$ docker inspect 06ec202e2d1d | grep 172
 
 If I go to that IP in a browser, the drupal login page will show up.
 
-![drupal docker](/images/posts/docker-drupal.png)
+![drupal docker](https://raw.githubusercontent.com/flatsec/flatsec.github.io/master/images/posts/docker-drupal.png)
 
 We can run ```docker log <container>``` to see what is going on. Most Dockerfiles for creating images will print login information and passwords and such to the log so that they can be accessed. Often each time passwords will be different. This probably isn't the best thing to do, ie. printing passwords to the log, so some Dockerfiles will allow environment variables for passwords, which is what I would suggest doing. But in this case we're just tossing up a quick drupal install for testing.
 
