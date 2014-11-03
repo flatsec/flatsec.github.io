@@ -16,7 +16,7 @@ In this post I just take a quick look at enabling apparmor for firefox.
 
 ### Workstations are a security problem
 
-I don't want to get too much into "the desktop problem". People like [Ben Hughes](www.slideshare.net/beehooze/devopsd ay-london-ben-hughes-security) of Etsy talk about modern security issues with workstations/laptops/desktops all the time. It's a problem.
+I don't want to get too much into "the desktop problem." People like [Ben Hughes](www.slideshare.net/beehooze/devopsd ay-london-ben-hughes-security) of Etsy talk about modern security issues with workstations/laptops/desktops all the time. It's a problem.
 
 ### What is appamor?
 

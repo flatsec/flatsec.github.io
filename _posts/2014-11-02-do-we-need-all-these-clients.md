@@ -46,7 +46,7 @@ Not only are these clients taking up memory and CPU resources, but they also inc
 
 * Often run as root
 
-Many of these clients expect to be run as root. For example, by default the chef client runs as root. Haproxy, Varnish, Apache, MySQL--these systems can all run as their own user and yet the Chef client is running as root. These systems are mature and drop privileges where they can. Presumably we're running each main service on a separate virtual machine in part for security reasons, and yet here is Chef or Puppet running as root on every node.
+Many of these clients expect to be run as root. For example, by default the Chef client runs as root. Haproxy, Varnish, Apache, MySQL--these systems can all run as their own user and yet the Chef client is running as root. These systems are mature and drop privileges where they can. Presumably we're running each main service on a separate virtual machine in part for security reasons, and yet here is Chef or Puppet running as root on every node.
 
 * May be listening on the network
 
@@ -74,7 +74,7 @@ If we deployed this example web application using containers we would not want t
 
 Of the four major configuration management systems, Puppet, Chef, Ansible, and SaltStack, Ansible is the only one that is typically deployed without agents. I am a big fan of Ansible, so perhaps I am biased here, but I certainly like the fact that Ansible is agent-less and uses ssh as its transport mechanism.
 
-The other three all support agentless workflows in some fashion (eg. [puppet](http://bitfieldconsulting.com/scaling-puppet-with-distributed-version-control)) usually by pulling code from a repository and running the agent from cron.
+The other three all support agentless workflows in some fashion (eg. [Puppet](http://bitfieldconsulting.com/scaling-puppet-with-distributed-version-control)) usually by pulling code from a repository and running the agent from cron.
 
 * Virtual machine introspection
 

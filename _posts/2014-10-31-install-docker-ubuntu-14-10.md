@@ -12,15 +12,15 @@ This post is quick look at installing docker (and using it a bit) on a Ubuntu 14
 
 I know many people don't think of Docker as a secure system when compared to virtual machines provided by something like KVM or Xen. But that is just one viewpoint.
 
-Another way to look at Docker is that it's an easy way to use container technology to limit what applications can do on a server, ie. a simpler way to use MAC security concepts. If one looks at Docker as a replacement for virtual machines, then yes, it might not look as secure. But that is probably the wrong way to think about Docker, at least at this time. Ok, so maybe no multi-tenancy yet. But single tenancy? Why not!
+Another way to look at Docker is that it's an easy way to use container technology to limit what applications can do on a server, ie. a simpler way to use MAC security concepts. If one looks at Docker as a replacement for virtual machines, then yes, it might not look as secure. But that is probably the wrong way to think about Docker, at least at this time. OK, so maybe no multi-tenancy yet. But single tenancy? Why not!
 
 <!-- more -->
 
-If you want to read up on docker there is a nice [docker cheat sheet](https://github.com/wsargent/docker-cheat-sheet) available. Also the official documentation is quite good.
+If you want to read up on Docker there is a nice [Docker cheat sheet](https://github.com/wsargent/docker-cheat-sheet) available. Also the official documentation is quite good.
 
 ### Step 1: Install Docker
 
-Seems like the docker package is still called ```docker.io```? I thought they had fixed that. There is another package named "docker" so they had to choose a different name. At least it seems the docker command is just ```docker``` now.
+Seems like the Docker package is still called ```docker.io```? I thought they had fixed that. There is another package named "docker" so they had to choose a different name. At least it seems the Docker command is just ```docker``` now.
 
 ```bash
 curtis$ sudo apt-get install docker.io
@@ -29,18 +29,18 @@ curtis$ docker --version
 Docker version 1.2.0, build fa7b24
 ```
 
-At first, you won't be able to run docker commands without sudo. Permission denied!
+At first, you won't be able to run Docker commands without sudo. Permission denied!
 
 ```bash
 curtis$ docker ps
 2014/10/31 10:10:25 Get http:///var/run/docker.sock/v1.14/containers/json: dial unix /var/run/docker.sock: permission denied
 ```
 
-If that's Ok with you, then don't do the next step.
+If that's OK with you, then don't do the next step.
 
-### Step 2: Add your user to the docker group
+### Step 2: Add your user to the Docker group
 
-Now add your user to the docker group.
+Now add your user to the Docker group.
 
 ```bash
 curtis$ sudo addgroup curtis docker
@@ -52,15 +52,15 @@ At this point you should relogin, but if you don't feel like doing that you can 
 curtis$ sudo su - curtis
 ```
 
-to relogin as yourself in order to have the docker group permissions.
+to relogin as yourself in order to have the Docker group permissions.
 
-Then restart docker.
+Then restart Docker.
 
 ```bash
 curtis$ sudo service docker restart
 ```
 
-Now I can run docker commands without sudoing to root.
+Now I can run Docker commands without sudoing to root.
 
 ```bash
 curtis$ docker info
@@ -79,7 +79,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ### Step 3: Start using Docker
 
-As an example, let's install Drupal via docker.
+As an example, let's install Drupal via Docker.
 
 ```bash
 curtis$ cd ~/docker/
@@ -129,7 +129,7 @@ drupal              latest              3a75b3b16395        30 seconds ago      
 debian              wheezy              61f7f4f722fb        10 days ago         85.1 MB
 ```
 
-We can startup a docker container based on that image.
+We can start up a Docker container based on that image.
 
 ```bash
 curtis$ docker run -d drupal:latest
@@ -144,7 +144,7 @@ CONTAINER ID        IMAGE               COMMAND                CREATED          
 06ec202e2d1d        drupal:latest       "/bin/bash /start.sh   45 seconds ago      Up 45 seconds       80/tcp              evil_ptolemy  
 ```
 
-We can checkout what IP it has. By default the IPs containers get are in the ```172.17.0.0/16``` network.
+We can check out what IP it has. By default the IPs containers get are in the ```172.17.0.0/16``` network.
 
 ```bash
 curtis$ docker inspect 06ec202e2d1d | grep 172
@@ -188,6 +188,6 @@ To remove the container, run ```docker stop <container> && docker rm <container>
 
 ### Conclusion
 
-Even as someone who is interested in security I am still a big fan of Docker. I think at some point Docker will become as secure as KVM/Xen based virtual machines or OpenVZ containers, Solaris Zones, BSD Jails, etc, but there is still more work to do. However, if you take a different viewpoint of containers and do not try to compare them to virtual machines, there there are situations where a Docker based system could be more secure, especially if you think of Docker as an easy way to user container technologies that provide additional separation from the underlying OS.
+Even as someone who is interested in security I am still a big fan of Docker. I think at some point Docker will become as secure as KVM/Xen based virtual machines or OpenVZ containers, Solaris Zones, BSD Jails, etc, but there is still more work to do. However, if you take a different viewpoint of containers and do not try to compare them to virtual machines, there are situations where a Docker based system could be more secure, especially if you think of Docker as an easy way to use container technologies that provide additional separation from the underlying OS.
 
 Also, Docker is not just a container sytem, it's also a software delivery system that allows IT workers to develop systems that can be deployed anywhere Docker can be. On its own that feature is quite powerful.
