@@ -8,7 +8,7 @@ categories:
 
 ---
 
-Yesterday I looked at [Charlie Miller's simple five line fuzzer](http://flatlinesecurity.com/posts/charlie-miller-five-line-fuzzer/) written in Python. Today I wrote that same little fuzzer in Go. 
+Yesterday I looked at [Charlie Miller's simple five line fuzzer](http://flatlinesecurity.com/posts/charlie-miller-five-line-fuzzer/) written in Python. Today I wrote that same little fuzzer in Go.
 
 <!-- more -->
 
@@ -37,7 +37,7 @@ for i := 0; i < numWrites; i++ {
 }
 ```
 
-Below is the full Go file. I'm simply reading a test pdf file into a byte array, altering it randomly, and then writing it to the file system again in a new file called ```changed.pdf```.
+Below is the full Go file. I'm simply reading a test PDF file into a byte array, altering it randomly, and then writing it to the file system again in a new file called ```changed.pdf```.
 
 A few notes:
 

@@ -13,7 +13,7 @@ I've been looking into fuzzing a bit, and as a first step wanted to find the sim
 
 ### Charlie Miller
 
-In these two quick videos, Charlie Miller, an independent security consultant who is quite famous for his ability to find and exploit vulnerabilities, discusses his "five line fuzzer" and how it was used, along with several other tools and strategies, to locate potential vulnerabilities. Miller also worked for the NSA, and has a PHd in Mathematics.
+In these two quick videos, Charlie Miller, an independent security consultant who is quite famous for his ability to find and exploit vulnerabilities, discusses his "five line fuzzer" and how it was used, along with several other tools and strategies, to locate potential vulnerabilities. Miller also worked for the NSA, and has a PhD in Mathematics.
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/Xnwodi2CBws" frameborder="0" allowfullscreen></iframe>
 <iframe width="560" height="315" src="//www.youtube.com/embed/lK5fgCvS2N4" frameborder="0" allowfullscreen></iframe>
@@ -36,7 +36,7 @@ for j in range(numwrites):
 
 Basically we're randomly corrupting a file. That file is fed to an application, and if the application crashes maybe there is a vulnerability/exploit.
 
-If we hop into my favorite python appplication ipython, we can mess around with this as well.
+If we hop into my favorite Python appplication ipython, we can mess around with this as well.
 
 ```bash
 In [33]: import random
