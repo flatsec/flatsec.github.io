@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      Do we need all these clients?
+title:      Do we really need all these clients running?
 date:       2014-11-02 14:00:00
 categories:
   - devops
 
 ---
 
-At my last job we tried to do a lot of DevOps type work. DevOps can mean a lot of different things to a lot of different people. Typically people associate DevOps with tools, which is only a small part of what it is (or can be). What I'm saying here is that in this post I'm going to talk about tools typically associated with DevOps, but I know it's more than that. :)
+Part of DevOps is tools. Not all of it, but some. Tools like Puppet, Chef, Sensu, Logstash...tools that provide valuable services in terms of configuration management, monitoring, and logging and metrics. But many of them require running a full-fledged client on the server. These clients take up resources, require maintenance, and increase the attack surface. Do we really need them?
 
 <!-- more -->
 
