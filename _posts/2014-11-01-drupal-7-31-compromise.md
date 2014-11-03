@@ -15,7 +15,7 @@ Recently Drupal (versions 7.x < 7.32) was discovered to have...well a [devastati
 
 ### Exploit in the wild!
 
-Pretty quickly "exploits were in the wild", as they say. The wilds of the Internet...which is pretty much all of it.
+Pretty quickly "exploits were in the wild," as they say. The wilds of the Internet...which is pretty much all of it.
 
 Here's a Python script that will exploit a Drupal 7.31 site. The original script can be found on [pastebin](http://pastebin.com/nDwLFV3v). There's also a [good blog post](http://www.volexity.com/blog/?p=83) from Volexity which discusses the exploit in more detail.
 
@@ -66,7 +66,7 @@ By default the Drupal docker image sets the login to ```admin``` and the passwor
 
 Drupal has been audited many, many times by different security organizations. In fact that was how this vulnerability was found--by a professional audit. It's one of the most popular content management systems in use, perhaps just behind Wordpress. It has a lot of "eyes" on it in terms of ensuring it's a secure system. And yet, here we are, ~32 releases into Drupal 7 and there are still holes being found.
 
-My point is that Drupal is not insecure, in fact it's probably one of the more secure content management systems available (if only because it's had so many security reviews and is so pouplar; been "battle tested" so to speak) and yet there are still holes found, holes that can cause up to [12 million sites](http://www.bbc.com/news/technology-29846539) to potentially be hacked, because bugs. I think it's easier to write insecure code in PHP than some other languages, but I don't think Drupal's security isses are a PHP issue per se, though some think otherwise.
+My point is that Drupal is not insecure, in fact it's probably one of the more secure content management systems available (if only because it's had so many security reviews and is so popular; been "battle tested" so to speak) and yet there are still holes found, holes that can cause up to [12 million sites](http://www.bbc.com/news/technology-29846539) to potentially be hacked, because bugs. I think it's easier to write insecure code in PHP than some other languages, but I don't think Drupal's security isses are a PHP issue per se, though some think otherwise.
 
 This suggests that most Drupal sites will need some additional security layers to try to reduce the damage that can occur in case of compromise, as well as processes and procedures to recover from a compromise. Of course, that is easier said than done.
 
