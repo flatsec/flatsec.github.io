@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Run Wireshark without Root on Ubuntu
-date:       2014-11-06 14:00:00
+date:       2014-11-04 14:00:00
 categories:
   - general
 
