@@ -79,7 +79,7 @@ curtis$ /sbin/getcap /usr/bin/*
 /usr/bin/traceroute6.iputils = cap_net_raw+ep
 ```
 
-Wireshark is using dumpcap to access the interface, and dumpcap has the Linux capabilities required to do just that.
+Wireshark is using dumpcap to access the interface, and dumpcap has the Linux capabilities required to do just that. So instead of running 1.5 million lines of code with superuser privileges, we just have dumpcap doing so, thus a reduced attack surface.
 
 ```bash
 curtis$ ps ax | grep "[w]ireshark\|[d]umpcap"
