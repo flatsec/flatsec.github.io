@@ -57,9 +57,9 @@ As can be seen the buf byte array is altered with the random chararacter. I'm us
 
 ### Conclusion
 
-Interestingly Miller found a few issues just using this simple fuzzer. Though his workflow was a bit more complicated than the fuzzing code itself. However, I think this is a good example of how to get started in fuzzing systems--corrupt some files, run an application on them and see what happens. I'm certainly going to mess around with it, and perhaps rewrite the simple example in Go and keep building from there. Having said that, fuzzer's can get really complicated and at some point time would be better spent using an existing fuzzing system, one that has been around for a while. There are lots of them (subject for another post).
+Interestingly Miller found a few issues just using this simple fuzzer. Though his workflow was a bit more complicated than the fuzzing code itself. However, I think this is a good example of how to get started in fuzzing systems--corrupt some files, run an application on them and see what happens. I'm certainly going to mess around with it, and perhaps rewrite the simple example in Go and keep building from there. Having said that, fuzzers can get really complicated and at some point time would be better spent using an existing fuzzing system, one that has been around for a while. There are lots of them (subject for another post).
 
-### PS. Untrusted binaries
+### P.S. Untrusted binaries
 
 lcamtuf has a [recent post](http://lcamtuf.blogspot.ca/2014/10/psa-dont-run-strings-on-untrusted-files.html), or PSA as he terms it, on not running strings on untrusted binaries:
 
