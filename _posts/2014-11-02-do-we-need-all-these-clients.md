@@ -68,6 +68,8 @@ I do think containers are important. They aren't going to be used by all organiz
 
 If we deployed this example web application using containers we would not want to run the additional services in each container. Using Docker as an example of container technology, it quickly becomes evident that it's preferable to run as few services in each container as possible, even going so far as to run only one main service (_if_ we can get away with it). I don't think it would make sense to run Varnish plus a Chef client, plus a Sensu client, plus a Logstash client in each individual container.
 
+Also, I should mention that some containers don't even run ssh.
+
 ### Potential solutions
 
 * Agent-less configuration management
