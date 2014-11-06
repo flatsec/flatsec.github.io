@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Ten New OpenSource Security Tools
+title:      Ten New Open Source Security Tools
 date:       2014-11-05 14:00:00
 categories:
   - general
