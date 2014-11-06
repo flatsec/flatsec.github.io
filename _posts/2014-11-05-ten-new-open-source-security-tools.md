@@ -13,6 +13,8 @@ Large hi-tech companies like Google, Netflix, Twitter and Facebook have been ope
 
 ## tl;dr
 
+These are in random order.
+
 1. [Google - Nogotofail](https://github.com/google/nogotofail)
 2. [Facebook - OSQuery](https://github.com/facebook/osquery)
 4. [OpenBSD 5.6](http://openbsd.org)
