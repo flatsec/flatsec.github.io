@@ -15,6 +15,9 @@
     <title>{{ site.title }} - {{ page.title }}</title>
     {% endif %}
 
+    <!-- Fontawesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap core CSS -->
@@ -39,6 +42,9 @@
 
     <div class="blog-masthead">
       <div class="container">
+        <a href="/" id="headerLogo">
+          <img src="/images/flatline-logo.png" />
+        </a>
         <nav class="blog-nav">
           {% for p in site.pages reversed %}
             {% if p.url contains 'page' or p.url contains 'categories' or p.url contains 'atom' %}
@@ -57,7 +63,6 @@
     <div class="container">
         <div class="blog-header">
             {% if page.title == "Home" %}
-            <h1 class="blog-title">{{ site.title | upcase }}</h1>
             {% else %}
             <h1 class="blog-title">{{ page.title | upcase }}</h1>
             {% endif %}

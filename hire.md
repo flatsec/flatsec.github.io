@@ -9,7 +9,7 @@ My name is Curtis Collicutt and I am a systems adminstrator specializing in info
 If you have an interesting infosec related position open and think I might be a good fit, please feel free to contact me. I'm available for a full-time position, contract, or consulting.
 
 * email: _curtis@flatlinesecurity.com_
-* github: [curtisgithub](http://github.com/curtisgithub)
+* github: [ccollicutt](http://github.com/ccollicutt)
 * twitter: [@serverascode](http://twitter.com/serverascode)
 * sysadmin blog: [serverascode.com](http://serverascode.com)
 * [linkedin](https://www.linkedin.com/profile/view?id=338312700)

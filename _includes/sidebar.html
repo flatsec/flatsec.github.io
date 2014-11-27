@@ -10,20 +10,20 @@ need to get this working on post pages: https://github.com/ghiculescu/jekyll-tab
 
 
     <h4>Categories</h4>
-    <ol class="list-unstyled">
+    <ul class="list-unstyled">
 {% for category in site.categories %}
-<li><a href="/categories">{{ category | first }}</a></li>
+<li><i class="fa fa-caret-right"></i> <a href="/categories">{{ category | first }}</a></li>
 
 {% endfor %}
     </ol>
     </div>
   <div class="sidebar-module">
     <h4>Links</h4>
-    <ol class="list-unstyled">
-      <li><a href="http://serverascode.com">serverascode.com</a></li>
-      <li><a href="https://www.linkedin.com/profile/view?id=338312700">linkedin</a></li>
-      <li><a href="https://twitter.com/ccollicutt">twitter</li>
-      <li><a href="https://github.com/ccollicutt">github</a></li>
+    <ul class="list-unstyled">
+      <li><i class="fa fa-linux"></i> <a href="http://serverascode.com">serverascode.com</a></li>
+      <li><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/profile/view?id=338312700">linkedin</a></li>
+      <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/ccollicutt">twitter</a></li>
+      <li><i class="fa fa-github"></i> <a href="https://github.com/ccollicutt">github</a></li>
 
     </ol>
   </div>
